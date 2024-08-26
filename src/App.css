@@ -1,38 +1,746 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.navbar{
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+
+
+}
+
+a{
+  text-decoration: none;
+  color:#212832;
+  margin:2rem;
+  font-weight: bold;
+}
+.login{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+}
+p{
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+button{
+  height: 2rem;
+  width: 5rem;
+  border-radius: 0.5rem;
+  background-color:  #FFF1DA;
+
+  border: 1px solid #212832;
+  color:#212832
+
+}
+
+.para1{
+  color:#DF6951;
+  font-weight: bolder;
+  margin-top: 2rem;
+}
+.content1{
+  display: flex;
+  
+}
+
+h1{
+  margin-left: 2rem;
+  display: inline-block;
+  position: relative;
+font-size: 4rem;
+  
+
+}
+h1::after {
+  content: "";
+  position: absolute;
+  left: 5rem;
+  bottom: 5.1rem; 
+  width: 90%;
+  height: 10px;
+  background-image: url("Decore (2).png");
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+.underline{
+
+  position: relative;
+}
+
+div.lfooter{
+  display: flex;
+
+  align-items: center;
+}
+.yt{
+
+ background-image: url("Play button.png");
+ height: 6rem;
+ width: 6rem;
+ background-size: contain;
+ background-repeat: none;
+ background-position: center;
+
+}
+.play{
+  display: flex;
+  justify-content: space-between;
+
+}
+.para2{
+  height: 3rem;
+  width: 10rem;
+  display: flex;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  background-color: #F1A501;
   color: white;
+  font-weight: bold;
+  border-radius: 0.5rem;
+  margin-bottom:2.3rem;
+}
+.para3{
+    font-weight: bold;
+    color: #212832;
+    margin-top:1.4rem;
+    margin-left: 0.2rem;
 }
 
-.App-link {
-  color: #61dafb;
+.right img{
+height: 45rem;
+width: auto;
+margin-left: 5rem;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+body{
+  background-image: url(Decore\ \(1\).png);
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: right top;
+height: 47rem;
+
+
+}
+/* ............. */
+
+
+@media (max-width: 1200px) {
+  .navbar {
+    flex-direction: column; 
+    align-items: center;
   }
-  to {
-    transform: rotate(360deg);
+
+  .right img {
+    height: 35rem; 
+    margin-left: 0; 
+  }
+
+  .content1 {
+    flex-direction: column; 
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar {
+    padding: 0.5rem; 
+  }
+
+  a {
+    margin: 0.5rem; 
+  }
+
+  .login {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .right img {
+    height: 25rem; 
+  }
+
+  h1 {
+    font-size: 2.5rem; 
+  }
+
+  .para2 {
+    width: 8rem; 
+  }
+
+  .para3 {
+    margin-left: 0.5rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .navbar {
+    padding: 0.5rem; 
+  }
+
+  a {
+    margin: 0.2rem; 
+  }
+
+  .right img {
+    height: 20rem; 
+  }
+
+  h1 {
+    font-size: 1.5rem; 
+  }
+
+  .para2 {
+    width: 6rem; 
+  }
+
+  .para3 {
+    font-size: 0.8rem; 
+    margin-left: 0.2rem; 
+  }
+
+
+}
+
+
+
+/* .......... */
+.top{
+  text-align: center;
+  
+}
+h2{
+  font-size: 2.5rem;
+}
+.cards{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+flex-wrap:wrap;
+
+}
+p{
+  font-size: 0.8rem;
+}
+.card1,.card2,.card3,.card4 {
+
+  margin-right: 2rem;
+  height: 14rem;
+  width:13rem;
+  background-color: white;
+  border-radius: 2rem;
+&& img{
+  height: 6rem;
+  width: 6rem;
+
+ display: inline-block;
+}
+&& .image{
+  margin-top: 1rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+}
+.trandform:hover{
+  transform: scale(1.1);
+
+}
+
+.extras {
+  background-image: url("Rectangle 157.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+ height: 4rem;
+ width: 4rem;
+  background-position:left top;
+  position: relative;
+  left: 6rem;
+  bottom: -6rem; 
+  z-index: -1;
+
+}
+
+
+@media (max-width: 1024px) {
+  .cards {
+    justify-content: space-between;
+  }
+  .card1, .card2, .card3, .card4 {
+    margin-right: 1rem;
+    height: 12rem;
+    width: 10rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .cards {
+    flex-direction: column;
+    align-items: center;
+  }
+  .card1, .card2, .card3, .card4 {
+    margin: 1rem 0;
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .card1, .card2, .card3, .card4 {
+    height: 14rem;
+    width: 90%;
+  }
+}
+.head{
+  font-weight: bold;
+  color: #5E6282;
+}
+.destinations{
+  margin-top: 2rem;
+  text-align: center;
+}
+h2{
+  margin-top: 0rem;
+}
+.boxes{
+ 
+ height: 18rem;
+ width: 15rem;
+ margin-right: 2rem;
+  background-color: red;
+}
+.box{
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+
+}
+
+.imgbox1{
+  width: 18rem;
+  height: 20rem;
+background-image: url("Rectangle 14.png");
+background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+
+}
+.imgbox2{
+  width: 18rem;
+  height: 20rem;
+background-image: url("Rectangle 14.jpg");
+background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  border: 1px solid black;
+
+}
+.imgbox3{
+  width: 20rem;
+  height: 20rem;
+background-image: url("Rectangle 14 (1).png");
+background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+border: 1px solid black;
+}
+.info{
+  display: flex;
+  justify-content: center;
+margin-right: 4rem;
+  align-items: center;
+  margin-top: 15rem;
+  margin-left: rem;
+}
+.pfooter{
+ text-align: left;
+}
+/* make it responsive */
+.booking{
+  display: flex;
+  justify-content: space-between;
+  margin-top: 3rem;
+  margin-left: 2rem;
+  height: 23rem;
+}
+
+.step{
+  display: flex;
+  align-items: center;
+  && img {
+    height: 3rem;
+    width: 3rem;
+  }
+}
+.right1{
+  height: 35rem;
+  width: 50%;
+  display: flex;
+ 
+}
+@media (max-width: 768px) {
+  .booking {
+    flex-direction: column; 
+    align-items: center;
+    margin-left: 0.5rem;
+    margin-top: 2rem;
+    height: auto;
+  }
+
+  .step img {
+    height: 1.5rem;
+    width: 1.5rem;
+  }
+ 
+
+  .right1 {
+    width: 100%;
+    height: auto; 
+    margin-top: 1rem; 
+    && img {
+      height:20rem;
+      width: 20rem;
+    }
+  }
+}
+
+
+@media (max-width: 480px) {
+  .booking {
+    flex-direction: column; 
+    align-items: center;
+    margin-left: 0;
+    margin-top: 1.5rem;
+    height: auto; 
+  }
+
+  .step img {
+    height: 1rem; 
+    width: 1rem;
+  }
+
+  .right1 {
+    width: 100%; 
+    height: auto; 
+    margin-top: 1rem; 
+  }
+}
+
+
+
+
+
+
+
+.testimonials{
+  margin: 2rem 2rem 0rem 2rem;
+display: flex;
+align-items: center;
+&& img {
+  margin-left: 6rem;
+}
+
+}
+.fvisible {
+margin-left: 30rem;
+  border-radius: 1rem;
+
+  height: 12rem;
+  width: 20rem
+}
+.hidden {
+  margin-left: 30rem;
+  border-radius: 0.5rem;
+
+  height: 12rem;
+  width: 20rem;
+
+}
+
+
+.inside{
+  
+  background-color: white;
+display: flex;
+flex-direction: column;
+  justify-content: space-around;
+  border-radius: 0.5rem;
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); 
+&& p{
+  margin-top: 2rem;
+}
+  
+}
+.inside2{
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; 
+  align-items: flex-start;
+height: 100%;
+ 
+
+}
+.hidden2{
+  border: 1px solid black;
+  position: relative;
+  margin-left: 30rem;
+  border-radius: 0.5rem;
+  background-color: #F7F7F7;
+  height: 12rem;
+  width: 20rem;
+  top: -9rem; 
+  left: 2rem; 
+  z-index: -1;
+}
+.right2{
+  margin-top: 2rem;
+  && img {
+    position:relative;
+    margin-left: 30rem;
+    top: 2.5rem; 
+    left: -2rem; 
+   
+    height: 4rem;
+    width: 4rem;
+    z-index: 1;
+  }
+}
+/* ............. */
+@media (max-width: 1200px) {
+  .testimonials img {
+    margin-left: 4rem; 
+  }}
+  .fvisible, .hidden, .hidden2 {
+    margin-left: 15rem; 
+    width: 15rem; 
+    height: 15rem; 
+  }
+
+  .right2 img {
+    margin-left: 15rem; 
+    height: 3rem; 
+    width: 3rem; 
+}
+
+@media (max-width: 768px) {
+  .testimonials {
+    flex-direction: column; 
+    align-items: center;
+  }
+
+  .testimonials img {
+    margin-left: 0;
+    margin-bottom: 1rem; 
+  }
+
+  .fvisible, .hidden, .hidden2 {
+    margin-left: 0; 
+    width: 90%;
+    max-width: 12rem; 
+    height: 18rem; 
+  }
+
+  .hidden2 {
+    position: static;
+    margin: 1rem 0;
+    top: 0;
+    left: 0;
+    z-index: auto;
+  }
+
+  .right2 img {
+    margin-left: 0;
+    height: 3rem; 
+    width: 3rem; 
+  }
+}
+
+@media (max-width: 480px) {
+  .testimonials {
+    margin: 1rem; 
+  }
+
+  .testimonials img {
+    margin-left: 0;
+    margin-bottom: 0.5rem; 
+  }
+
+  .fvisible, .hidden, .hidden2 {
+    width: 100%; 
+    max-width: 10rem; 
+    height: 20rem; 
+  }
+  
+  .right2 img {
+    height: 2rem; 
+    width: 2rem; 
+  }
+}
+/* ............. */
+
+
+.sponsors{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+}
+.b1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 4rem;
+  width: 12rem;
+
+}
+.b1:hover{
+  transform: scale(1.1);
+  box-shadow: 2px 4px 8px rgba(0, 0, 0, 0.2); 
+}
+
+.register {
+  border-top-left-radius: 2rem;
+  margin-top: 2rem;
+  background-color:#DFD7F9;
+  height: 15rem;
+  width: 50rem;
+  && h3{
+    margin-top: 2rem;
+    text-align: center;
+  }
+}
+.outer{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.outer1{
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  
+
+}
+.enter{
+  display: flex;
+  width: auto;
+  margin-top: 4rem;
+ justify-content: center;
+  && img {
+    height: 3rem;
+   
+  }
+}
+.sub {
+  background: linear-gradient(180deg, #FF946D 0%, #FF7D68 100%);
+  color: white;
+  font-weight: bold;
+  height: 3rem;
+  width: 8rem;
+  margin-left: 3rem;
+ 
+}
+.tel {
+  &&
+  img {
+  position: relative;
+  top:-6rem;
+  left: 51rem;
+  
+}
+}
+
+.footer{
+  margin-top: 1rem;
+  display: flex;
+ 
+  justify-content: space-around;
+  && p{
+    font-weight: bold;
+  font-size: 15px;
+  }
+}
+.s1,.s2,.s3,.s4,.s5{
+  display: flex;
+  flex-direction: column;
+
+  align-items: center;
+  && a{
+    margin-top: 0.1rem;
+    color:#5E6282;
+  }
+}
+.download {
+
+  display: flex;
+  justify-content: space-between;
+}
+.lastpara{
+color: #5E6282;
+  text-align: center;
+  font-weight: bold;
+}
+
+@media (max-width: 1200px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem; 
+  }
+  
+  .download {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}
+
+
+@media (max-width: 768px) {
+  .footer {
+    margin-top: 0.5rem;
+    gap: 1.5rem; 
+  }
+
+  .s1, .s2, .s3, .s4, .s5 {
+    width: 100%; 
+    align-items: flex-start; 
+    padding: 0 1rem; 
+  }
+
+  .download {
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    gap: 1rem;
+  }
+
+  .lastpara {
+    font-size: 14px; 
+    padding: 0 1rem; 
+  }
+}
+
+
+@media (max-width: 480px) {
+  .footer {
+    gap: 2rem; 
+  }
+
+  .s1, .s2, .s3, .s4, .s5 {
+    width: 100%;
+    align-items: center;
+    padding: 0.5rem 0; 
+  }
+
+  .download {
+    width: 100%;
+    gap: 2rem;
+  }
+
+  .lastpara {
+    font-size: 13px; 
   }
 }
